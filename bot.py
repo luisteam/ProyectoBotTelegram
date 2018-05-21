@@ -89,7 +89,7 @@ def command_crypto(m):
                 dolar=i['Price_usd']
                 euro=i['Price_eur']
                 volumen=i['Volume_24h']
-                frase='%s tiene un precio de: 💵 %d USD, 💶 %d EUR, con un volumen 💸 de %d en las ultimas 24h' % (i['Name'],dolar,euro,volumen)
+                frase='%s tiene un precio de: 💵 %.2f USD, 💶 %.2f EUR, con un volumen 💸 de %d en las ultimas 24h' % (i['Name'],dolar,euro,volumen)
                 bot.send_message( cid, frase)
         else:
             if i['Name'] == moneda.capitalize():
@@ -144,7 +144,7 @@ def command_crypto2(m):
         nombre=i['Name']
         precio=i['Price']
         volumen=i['Volume_24h']
-        frase='%s tiene un precio de: 💶 %d EUR, con un volumen 💸 de %d en las ultimas 24h' % (nombre,precio,volumen)
+        frase='%s tiene un precio de: 💶 %.2f EUR, con un volumen 💸 de %d en las ultimas 24h' % (nombre,precio,volumen)
         bot.send_message( cid, frase)
 
 #############################################
