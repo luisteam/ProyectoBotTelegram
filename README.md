@@ -26,7 +26,7 @@ El Bot se comunica con la API de divisas a través de GET.
         
         - /all (texto)                <---- Envia un texto a los usuarios que tengan agregados el bot.
      
-      Comando Inline:
+      Comando Inline: (Beta) (La query del bot debe completarse antes de 15s o dara error 400 en server y no mostrara nada en el chat.)
         
         - @LMLuis_bot cryptos         <---- Seleccion de monedas y envia estadisticas de la seleccionada.
         
